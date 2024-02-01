@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+#navbar{
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    box-shadow: 0px 0px 5px 2px black;
+
+}
+
+.links{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.links a{
+    text-decoration: none;
+    font-weight: 500; 
+    color: #fff;
+}
+
+.links a:hover{
+    color: red;
+    transition:all 0.3s ease-in-out;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger span
+{
+    display: block;
+    background-color:#fff;
+    margin: 5px;
+    width: 29px;
+    height: 4px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+@media(width <= 800px){
+    .hamburger{
+        display: block;
+    }
+
+    .navlinks{
+        display: none;
+    }
+}
+
+.slidingNav {
+    overflow: hidden;
+    height: 0px;
+    transition: all .3s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+.navlinks2 {
+    padding: 10px; /* Adjust as needed */
+    background-color: #000;
+}
+
+.height{
+    height: 200px;
+}
+
+.links2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links2 li {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.links2 a {
+    text-decoration: none;
+    color: #fff; /* Adjust as needed */
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.span1{
+    transform: translateY(16px);
+}
+
+.span2{
+    opacity: 0;
+}
+
+.span3{
+    transform: translateY(-16px);
+}
